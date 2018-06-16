@@ -10,15 +10,16 @@ If you want to run this project without any problem, it is better recreate a new
 ```
 conda-env create -n image_captioning -f requirement.yml
 ```
+In addition to that, you also need to install [standard evaluation repository](https://github.com/tylin/coco-caption) in order to evaluate model's performance.
 
 ### Generate data
-In original paper, eval dataset is divided to two parts, one is used for training, the other part is used for testing. Therefore, a script is required to rebuild training dataset and testing dataset. This can be done by running following command.
+In original paper, standard dataset [Microsoft COCO](http://cocodataset.org/#home) is used, and eval dataset is divided to two parts, one is used for training, the other part is used for testing. Therefore, a script is required to rebuild training dataset and testing dataset. This can be done by running following command.
 ```
 python split_dataset.py
 ```
 
 ## Train model
-Default setting is given in `run.py` script. If you want to do any modification, you only need to modify corresponding parameters in this script. Once parameters are setted, just run following command to start to train model.
+Default setting is given in `run.py` script. If you want to do any modification, you only need to modify corresponding parameters in this script. Once parameters are set, just run following command to start to train model.
 ```
 python run.py
 ```
