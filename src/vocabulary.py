@@ -80,5 +80,5 @@ def build_vocab(raw_data_dir, data_dir):
 
     print("Saved the vocabulary wrapper to '{}'".format(vocab_file_path))
 
-#if __name__=='__main__':
-#build_vocab('../raw_data_dir/annotations','../data_dir/exp_6')
+if __name__=='__main__':
+    build_vocab('../raw_data_dir/annotations','../data_dir/exp_1')
